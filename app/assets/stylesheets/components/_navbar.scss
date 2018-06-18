@@ -4,23 +4,28 @@
   background: white;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  padding: 0px 30px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-wagon-brand {
+  height: 100px;
+  background-color: $brand-primary;
+  color:white;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  text-decoration: none;
+  span {
+    font-family: $headers-font;
+    padding-top: 10px;
+    font-size: 30px;
+  }
 }
 
-/* User Avatar */
-.navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-}
 
 /* Right section */
 .navbar-wagon-right {
@@ -37,11 +42,12 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: $red;
   font-size: 14px;
+  font-weight: lighter;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: $darker-red;
   text-decoration: none;
 }
 

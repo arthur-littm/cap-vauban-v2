@@ -1,0 +1,21 @@
+.booking-form {
+  padding-bottom: 50px;
+  .form-control {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid $lighter-blue;
+    margin-bottom: 10px;
+    color: white;
+  }
+  textarea {
+    resize: none;
+  }
+}
+.booking-comment {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: white;
+  opacity: .7;
+}

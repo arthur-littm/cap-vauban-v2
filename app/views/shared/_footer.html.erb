@@ -1,0 +1,24 @@
+<div class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span><i class="fas fa-phone"></i> +33 (0)123456789</span>
+        <span><i class="fas fa-at"></i> lecapvauban@gmail.com</span>
+        <span>
+          <% if user_signed_in? %>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+              <i class="fas fa-sign-out-alt"></i>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+              <i class="fas fa-sign-in-alt"></i>
+            <% end %>
+          <% end %>
+        </span>
+      </div>
+      <div class="footer-right hidden-xs">
+        <span>Made by <a href="https://www.arthur-littm.com/">Arthur Littmann</a>.</span>
+      </div>
+    </div>
+  </div>
+</div>

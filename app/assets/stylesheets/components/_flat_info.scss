@@ -1,0 +1,26 @@
+.flat-info {
+  color: white;
+}
+
+.flat-image img {
+  width: 100%;
+}
+
+.flat-description {
+  padding: 50px 20px 0px 20px;
+  p {
+    font-weight: lighter;
+  }
+}
+
+.flat-equipment {
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify: space-around;
+  span {
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+    font-weight: lighter;
+  }
+}

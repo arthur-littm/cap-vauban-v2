@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="section-title">
+    <h2>Calendar & Pricing</h2>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+      <div class="calendar" style="height: 400px; background-color: lightgray"></div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="pricing">
+        <h3>Prices</h3>
+        <% prices.each do |price| %>
+          <div class="week-price">
+            <span class="price">700€</span>
+            <div class="info">
+              <p><%= price.period_name %></p>
+              <span><%= price.start_date %> to <%= price.end_date %></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
