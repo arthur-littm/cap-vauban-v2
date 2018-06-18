@@ -14,7 +14,7 @@
 .navbar-wagon-brand {
   height: 100px;
   background-color: $brand-primary;
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   padding: 0px 50px;
@@ -23,6 +23,10 @@
     font-family: $headers-font;
     padding-top: 10px;
     font-size: 30px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
   }
 }
 
