@@ -4,7 +4,7 @@
     background: transparent;
     border: none;
     box-shadow: none;
-    border-bottom: 2px solid $lighter-blue;
+    border-bottom: 1px solid $lighter-blue;
     margin-bottom: 10px;
     color: white;
   }
@@ -18,4 +18,7 @@
   margin-bottom: 50px;
   color: white;
   opacity: .7;
+  a {
+    color: white;
+  }
 }

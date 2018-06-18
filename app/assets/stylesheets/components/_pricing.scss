@@ -7,5 +7,29 @@
 }
 
 .week-price {
-
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #fb6d7126;
+  p {
+    margin: 0;
+  }
+  .price {
+    font-size: 30px;
+    font-family: $headers-font;
+    color: $brand-primary;
+  }
+  .info {
+    text-align: center;
+    p {
+      font-weight: bold;
+    }
+    span {
+      font-weight: lighter;
+      font-size: 14px;
+      opacity: .7;
+    }
+  }
 }
