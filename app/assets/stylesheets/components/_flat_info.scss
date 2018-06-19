@@ -6,6 +6,18 @@
   width: 100%;
 }
 
+.owl-nav {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  button:focus {
+    outline: none;
+  }
+}
+
 .flat-description {
   padding: 50px 20px 0px 20px;
   p {
