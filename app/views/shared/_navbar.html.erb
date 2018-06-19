@@ -9,10 +9,10 @@
 
 
       <!-- Links when logged in -->
-      <%= link_to "LOCATION", "#location", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "PROPERTIES", "#properties", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "CALENDAR & PRICES", "#calendar", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "BOOKING", "#booking", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "LOCATION", "#location", class: "navbar-wagon-item navbar-wagon-link", data: {scroll: ""} %>
+      <%= link_to "PROPERTIES", "#properties", class: "navbar-wagon-item navbar-wagon-link", data: {scroll: ""} %>
+      <%= link_to "CALENDAR & PRICES", "#calendar", class: "navbar-wagon-item navbar-wagon-link", data: {scroll: ""} %>
+      <%= link_to "BOOKING", "#booking", class: "navbar-wagon-item navbar-wagon-link", data: {scroll: ""} %>
       <% if user_signed_in? && current_user.admin %>
         <%= link_to "ADMIN", "/admin", class: "navbar-wagon-item navbar-wagon-link" %>
       <% end %>
