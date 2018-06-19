@@ -5,13 +5,20 @@
     </div>
     <div class="row">
       <div class="booking-comment">
-        <p>If you would like to book one of our appartements please send us a message about it using the form below. Be sure to include the number of guests and the dates desired (please check <a href="#calendar" data-scroll>availablity and prices</a> before enquiring).</p>
+        <p>If you would like to book one of our appartements please send us a message about it using the form below. Be sure to include the number of guests and the dates desired.</p>
       </div>
       <div class="col-xs-12 col-md-6 col-md-offset-3">
         <form method="POST" action="https://formspree.io/lecapvauban@gmail.com" class="booking-form">
-          <input type="email" name="email" placeholder="Your email" class="form-control">
-          <input type="text" name="subject" placeholder="Subject" class="form-control">
-          <textarea name="message" placeholder="Your message" class="form-control"></textarea>
+          <input type="email" name="email" placeholder="Your email" class="form-control" required="true">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" name="dates" placeholder="Dates desired" class="form-control" required="true">
+            </div>
+            <div class="col-xs-6">
+              <input type="number" name="guests" placeholder="Number of guests" class="form-control" required="true">
+            </div>
+          </div>
+          <textarea name="message" placeholder="Your message" class="form-control" required="true"></textarea>
           <button type="submit" class="btn btn-danger"><i class="fab fa-telegram-plane"></i> Send</button>
         </form>
       </div>
