@@ -1,11 +1,22 @@
-<div class="container" id="calendar">
+<div class="container" id="reviews">
   <div class="section-title blue">
-    <h2>Calendar & Pricing</h2>
+    <h2>Reviews & Prices</h2>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-8">
-      <div class="calendar">
-        <h3>Calendar coming soon</h3>
+      <div class="reviews">
+        <div class="owl-carousel-reviews owl-carousel owl-theme">
+          <% reviews.each do |review| %>
+            <div class="review">
+              <%= simple_format(review.content) %>
+              <div class="review-author">
+                <span class="author"><%= review.author %></span>
+                <span class="date"><%= review.published %></span>
+              </div>
+            </div>
+
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="col-xs-12 col-md-4">
@@ -24,3 +35,5 @@
     </div>
   </div>
 </div>
+
+
