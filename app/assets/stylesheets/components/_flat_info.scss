@@ -2,8 +2,11 @@
   color: white;
 }
 
-.flat-image img {
+.flat-image {
   width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
 }
 
 .owl-nav {

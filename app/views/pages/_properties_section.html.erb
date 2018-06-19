@@ -8,30 +8,12 @@
         <div class="col-xs-12 col-md-6">
           <div class="flat-info">
             <h3 class="text-center"><%= flat.name %></h3>
-            <div class="flat-image">
-              <div class="owl-carousel owl-theme">
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
+            <div class="owl-carousel owl-theme">
+              <% flat.flat_photos.each do |flat_photo| %>
+                <%#= raise %>
+                <div class="flat-image" style="background-image: url(<%= image_path flat_photo.photo.url, sign_url: true %>)">
                 </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-                <div>
-                  <%= image_tag "https://kitt.lewagon.com/placeholder/cities/marseille" %>
-                </div>
-              </div>
+              <% end %>
             </div>
 
             <div class="flat-description">
