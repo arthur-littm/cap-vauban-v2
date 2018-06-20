@@ -2,4 +2,40 @@
   height: 40vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.ratings {
+  display: flex;
+}
+
+.rating {
+  display: flex;
+  background: rgba(255,255,255, 0.7);
+  margin-right: 10px;
+  align-items: center;
+  padding: 5px 10px;
+  opacity: .7;
+  position: relative;
+  .stars {
+    margin-left: 10px;
+    color: $red;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+.rating-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }

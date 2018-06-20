@@ -1,4 +1,31 @@
-<div class="banner" style="background-image: url(<%= image_path "banner.jpg" %>)"></div>
+<div class="banner" style="background-image: url(<%= image_path "banner.jpg" %>)">
+  <div class="ratings hidden-xs">
+    <div class="rating tripadvisor">
+      <%= image_tag "tripadvisor.png", height: 40 %>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <span>(34)</span>
+      <%= link_to "", "#", target: "_blank", class: "rating-link"  %>
+    </div>
+    <div class="rating homeaway">
+      <%= image_tag "homeaway.svg", height: 40 %>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <span>(80)</span>
+      <%= link_to "", "https://www.abritel.fr/location-vacances/p673629#reviews", target: "_blank", class: "rating-link"  %>
+    </div>
+  </div>
+</div>
 
 <%= render "location_section" %>
 <%= render "properties_section", flats: @flats %>
