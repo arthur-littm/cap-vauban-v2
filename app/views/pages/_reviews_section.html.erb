@@ -9,9 +9,10 @@
           <% reviews.each do |review| %>
             <div class="review">
               <%= simple_format(review.content) %>
+              <hr>
               <div class="review-author">
                 <span class="author"><%= review.author %></span>
-                <span class="date"><%= review.published %></span>
+                <span class="date"><%= review.published.strftime('%B %Y') %></span>
               </div>
             </div>
 
