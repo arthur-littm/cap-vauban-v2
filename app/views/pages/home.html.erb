@@ -1,28 +1,31 @@
 <div class="banner" style="background-image: url(<%= image_path "banner.jpg" %>)">
-  <div class="ratings hidden-xs">
-    <div class="rating tripadvisor">
-      <%= image_tag "tripadvisor.png", height: 40 %>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+  <div class="banner-content">
+    <h1>Appartements in the <strong>heart</strong> of Antibes</h1>
+    <div class="ratings hidden-xs">
+      <div class="rating tripadvisor">
+        <%= image_tag "tripadvisor.png", height: 40 %>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <span>(2)</span>
+        <%= link_to "", "https://www.tripadvisor.com/VacationRentalReview-g187217-d5002146-Le_Port_F2_50_m2_at_Port_Vauban_near_Old_Town_A_C_wifi_garage_terrace-Antibes_French_R.html", target: "_blank", class: "rating-link"  %>
       </div>
-      <span>(2)</span>
-      <%= link_to "", "https://www.tripadvisor.com/VacationRentalReview-g187217-d5002146-Le_Port_F2_50_m2_at_Port_Vauban_near_Old_Town_A_C_wifi_garage_terrace-Antibes_French_R.html", target: "_blank", class: "rating-link"  %>
-    </div>
-    <div class="rating homeaway">
-      <%= image_tag "homeaway.svg", height: 40 %>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
+      <div class="rating homeaway">
+        <%= image_tag "homeaway.svg", height: 40 %>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+        </div>
+        <span>(80)</span>
+        <%= link_to "", "https://www.abritel.fr/location-vacances/p673629#reviews", target: "_blank", class: "rating-link"  %>
       </div>
-      <span>(80)</span>
-      <%= link_to "", "https://www.abritel.fr/location-vacances/p673629#reviews", target: "_blank", class: "rating-link"  %>
     </div>
   </div>
 </div>

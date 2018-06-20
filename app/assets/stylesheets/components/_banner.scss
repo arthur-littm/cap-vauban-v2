@@ -1,13 +1,31 @@
 .banner {
-  height: 40vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   display: flex;
   padding: 20px;
   align-items: flex-end;
+  position: relative;
+  justify-content: center;
+  h1 {
+    background: white;
+    border-radius: 2px;
+    padding: 8px 16px;
+    margin: 0;
+    color: $brand-primary;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.1);
+  }
+  strong {
+    color: $red;
+  }
 }
 
 .ratings {
+  // position: absolute;
+  // bottom: 20px;
+  // left: 20px;
   display: flex;
 }
 
@@ -19,6 +37,7 @@
   padding: 5px 10px;
   opacity: .7;
   position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0, 0.1);
   .stars {
     margin-left: 10px;
     color: $red;
