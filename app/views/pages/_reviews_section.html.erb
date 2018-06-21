@@ -6,7 +6,7 @@
     <div class="col-xs-12 col-md-7">
       <div class="reviews">
         <div class="owl-carousel-reviews owl-carousel owl-theme">
-          <% reviews.each do |review| %>
+          <% reviews.where(language: locale.to_s).each do |review| %>
             <div class="review">
               <%= simple_format(review.content) %>
               <hr>
