@@ -1,6 +1,6 @@
 <div class="container" id="reviews">
   <div class="section-title blue">
-    <h2>Reviews & Prices</h2>
+    <h2><%= title %></h2>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-7">
@@ -22,7 +22,7 @@
     </div>
     <div class="col-xs-12 col-md-5">
       <div class="pricing">
-        <h3>Weekly prices</h3>
+        <h3><%= weekly_prices %></h3>
         <% prices.order(start_date: :asc).each do |price| %>
           <div class="week-price">
             <span class="price"><%= humanized_money_with_symbol(price.price) %></span>

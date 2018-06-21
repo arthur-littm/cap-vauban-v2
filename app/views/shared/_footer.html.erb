@@ -2,8 +2,6 @@
   <div class="container">
     <div class="footer-content">
       <div class="footer-left">
-        <span><i class="fas fa-phone"></i> +33 (0)123456789</span>
-        <span><i class="fas fa-at"></i> lecapvauban@gmail.com</span>
         <span>
           <% if user_signed_in? %>
             <%= link_to destroy_user_session_path, method: :delete do %>

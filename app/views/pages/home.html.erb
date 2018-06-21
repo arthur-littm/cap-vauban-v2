@@ -1,6 +1,6 @@
 <div class="banner" style="background-image: url(<%= image_path "banner.jpg" %>)">
   <div class="banner-content">
-    <h1>Appartements in the <strong>heart</strong> of Antibes</h1>
+    <h1><%= t('.title').html_safe %></h1>
     <div class="ratings hidden-xs">
       <div class="rating tripadvisor">
         <%= image_tag "tripadvisor.png", height: 40 %>
@@ -31,7 +31,21 @@
 </div>
 
 <%= render "location_section" %>
-<%= render "properties_section", flats: @flats %>
-<%= render "reviews_section", prices: @prices, reviews: @reviews %>
-<%= render "booking_section", flats: @flats %>
+<%= render "properties_section", flats: @flats, title: t('.properties_title') %>
+<%= render "reviews_section",
+  prices: @prices,
+  reviews: @reviews,
+  title: t('.reviews_title'),
+  weekly_prices: t('.weekly_prices')
+%>
+<%= render "booking_section",
+  flats: @flats,
+  title: t('.booking_title'),
+  description: t('.booking_description'),
+  email: t('.booking_email'),
+  dates: t('.booking_title'),
+  guests: t('.booking_guests'),
+  message: t('.booking_message'),
+  btn: t('.booking_btn')
+%>
 
