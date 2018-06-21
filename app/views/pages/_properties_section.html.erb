@@ -22,21 +22,21 @@
 
             <div class="flat-equipment">
               <% if flat.wifi %>
-                <span><i class="fas fa-fw fa-wifi"></i> WIFI</span>
+                <span><i class="fas fa-fw fa-wifi"></i> <%= wifi %></span>
               <% end %>
               <% if flat.tv %>
                 <span><i class="fas fa-fw fa-tv"></i> TV</span>
               <% end %>
               <% if flat.kitchen %>
-                <span><i class="fas fa-fw fa-utensils"></i> Kitchen</span>
+                <span><i class="fas fa-fw fa-utensils"></i> <%= kitchen %></span>
               <% end %>
               <% if flat.washing_machine %>
-                <span><i class="fas fa-fw fa-tshirt"></i> Washing machine</span>
+                <span><i class="fas fa-fw fa-tshirt"></i> <%= washing %></span>
               <% end %>
               <% if flat.aircon %>
-                <span><i class="fas fa-fw fa-snowflake"></i> Air conditioning</span>
+                <span><i class="fas fa-fw fa-snowflake"></i> <%= aircon %></span>
               <% end %>
-              <span><i class="fas fa-fw fa-bed"></i> <%= flat.beds %> beds</span>
+              <span><i class="fas fa-fw fa-bed"></i> <%= flat.beds %> <%= beds %></span>
             </div>
           </div>
         </div>

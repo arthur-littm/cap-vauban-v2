@@ -31,7 +31,16 @@
 </div>
 
 <%= render "location_section" %>
-<%= render "properties_section", flats: @flats, title: t('.properties_title') %>
+<%= render "properties_section",
+  flats: @flats,
+  title: t('.properties_title'),
+  wifi: t('.flat_wifi'),
+  tv: t('.flat_tv'),
+  beds: t('.flat_beds'),
+  washing: t('.flat_washing'),
+  kitchen: t('.flat_kitchen'),
+  aircon: t('.flat_aircon')
+%>
 <%= render "reviews_section",
   prices: @prices,
   reviews: @reviews,
