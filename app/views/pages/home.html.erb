@@ -11,7 +11,7 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </div>
-        <span>(2)</span>
+        <span>(6)</span>
         <%= link_to "", "https://www.tripadvisor.com/VacationRentalReview-g187217-d5002146-Le_Port_F2_50_m2_at_Port_Vauban_near_Old_Town_A_C_wifi_garage_terrace-Antibes_French_R.html", target: "_blank", class: "rating-link"  %>
       </div>
       <div class="rating homeaway">
@@ -23,7 +23,7 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star-half"></i>
         </div>
-        <span>(80)</span>
+        <span>(84)</span>
         <%= link_to "", "https://www.abritel.fr/location-vacances/p673629#reviews", target: "_blank", class: "rating-link"  %>
       </div>
     </div>
@@ -32,7 +32,7 @@
 
 <%= render "location_section" %>
 <%= render "properties_section",
-  flats: @flats,
+  flat: @flat,
   title: t('.properties_title'),
   wifi: t('.flat_wifi'),
   tv: t('.flat_tv'),
