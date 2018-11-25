@@ -7,7 +7,7 @@
       <div class="flat-info">
         <div class="flat-header">
           <h3 class="text-center"><%= flat.name %></h3>
-          <%= link_to "View calendar", "#", class: "btn btn-danger" %>
+          <%= link_to "View calendar", flat.calendar_url, target: "_blank", class: "btn btn-danger" %>
         </div>
         <div class="owl-carousel owl-theme">
           <% flat.flat_photos.order(:position).each do |flat_photo| %>

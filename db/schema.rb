@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_21_154948) do
+ActiveRecord::Schema.define(version: 2018_11_25_195806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2018_06_21_154948) do
     t.float "longitude"
     t.text "description"
     t.text "description_fr"
+    t.string "calendar_url"
   end
 
   create_table "prices", force: :cascade do |t|
