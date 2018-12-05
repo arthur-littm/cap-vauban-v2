@@ -1,12 +1,13 @@
 en:
   pages:
     home:
-      title: "Appartements in the <strong>heart</strong> of Antibes"
-      properties_title: "Our properties"
+      title: "Appartement in the <strong>heart</strong> of Antibes"
+      properties_title: "Appartement"
+      properties_btn: "View calendar"
       reviews_title: "Reviews & Prices"
       weekly_prices: "Weekly prices"
       booking_title: "Book with us"
-      booking_description: "If you would like to book one of our appartements please send us a message about it using the form below. Be sure to include the number of guests and the dates desired."
+      booking_description: "If you would like to book our appartement please send us a message about it using the form below. Be sure to include the number of guests and the dates desired."
       booking_email: "Your email"
       booking_dates: "Desired dates"
       booking_guests: "Number of guests"
@@ -19,6 +20,6 @@ en:
       flat_aircon: "Air conditioning"
       flat_beds: "beds"
   location: "location"
-  properties: "properties"
+  properties: "appartement"
   reviews: "reviews & prices"
   booking: "booking"

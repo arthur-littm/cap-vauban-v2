@@ -2,11 +2,12 @@ fr:
   pages:
     home:
       title: "Louez un appartement au <strong>cœur</strong> de Antibes"
-      properties_title: "Nos appartements"
+      properties_title: "Appartement"
+      properties_btn: "Voir calendrier"
       reviews_title: "Commentaires & Prix"
       weekly_prices: "Prix hebdomadaires"
       booking_title: "Louez un appartement"
-      booking_description: "Si vous désirez louer l'un de nos appartement veuillez nous envoyer un message ci-dessous. N'oubliez pas de préciser les dates désirez et le nombres de personnes."
+      booking_description: "Si vous désirez louer notre appartement veuillez nous envoyer un message ci-dessous. N'oubliez pas de préciser les dates désirez et le nombres de personnes."
       booking_email: "Votre email"
       booking_dates: "Dates désirez"
       booking_guests: "Nombre de personnes"
@@ -19,6 +20,6 @@ fr:
       flat_aircon: "Air conditionné"
       flat_beds: "lits"
   location: "emplacement"
-  properties: "appartements"
+  properties: "appartement"
   reviews: "commentaires & prix"
   booking: "louer"
